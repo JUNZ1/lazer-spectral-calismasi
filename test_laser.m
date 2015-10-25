@@ -1,11 +1,11 @@
+%deneme calismalari
 clear
 clc
 close all
 
-load('baran2')
-laser=rossubscriber('/r1/front_laser/scan')
+laser=rossubscriber('/r1/front_laser/scan');
 
-scandata=receive(laser,10)
+scandata=receive(laser,10);
 
 plot(scandata.Ranges)
 
@@ -19,6 +19,8 @@ wname = 'db2';
 coefs2 = cwt(sinyal,scales2,wname);
 wscalogram('image',coefs2,'scales',scales2,'ydata',sinyal);
 
-% figure()
-% plot(coefs2)
+figure()
+plot(coefs2)
 %db2 fena deil
+clear ans array laser patern scales2 scandata wname coefs2
+sinyal=double(sinyal);
