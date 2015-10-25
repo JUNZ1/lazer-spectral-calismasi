@@ -1,0 +1,1 @@
+laser = rossubscriber('/r1/front_laser/scan','sensor_msgs/LaserScan',@laser_subscriber)
