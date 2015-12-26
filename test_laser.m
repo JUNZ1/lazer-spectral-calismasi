@@ -22,5 +22,9 @@ wscalogram('image',coefs2,'scales',scales2,'ydata',sinyal);
 figure()
 plot(coefs2)
 %db2 fena deil
+range_finder=array;
 clear ans array laser patern scales2 scandata wname coefs2
 sinyal=double(sinyal);
+close all
+plot(range_finder)
+
